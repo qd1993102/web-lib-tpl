@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "paths": {
+      "src": ["src/"]
+    },
+    "baseUrl": ".",
+    "outDir": "./es",
+    "types": [],
+    "pretty": true,
+    "target": "ES6",
+    "declaration": true,
+    "allowJs": true
+  },
+  "lib": [
+    "ES6"
+  ],
+  "files": [
+    "./index.ts"
+  ],
+  "include": ["src/**/*"]
+}

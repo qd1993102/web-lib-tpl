@@ -1,0 +1,23 @@
+{
+  "name": "fat",
+  "version": "1.0.0",
+  "description": "functional animation tools",
+  "main": "es/index.js",
+  "scripts": {
+    "dev": "sh ./scripts/build.sh dev",
+    "test": "sh ./scripts/build.sh test",
+    "build": "sh ./scripts/build.sh build"
+  },
+  "author": "",
+  "license": "ISC",
+  "_moduleAliases": {
+    "src": "src/"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
