@@ -9,9 +9,6 @@ repourl=`${packbin} repository.url`
 repover=`${packbin} version`
 
 function dev() {
-  rm -rf ./dist/
-  mkdir ./dist/
-  cp ./examples/index.html ./dist/example.html
   webpack-dev-server --config ./scripts/config/webpack.dev.js --watch
 }
 
