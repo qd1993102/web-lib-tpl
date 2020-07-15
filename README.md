@@ -8,6 +8,8 @@
 
 ```npm run dev```
 
+open [http://localhost:9000/examples/index.html](http://localhost:9000/examples/index.html)
+
 #### build
 
 ```npm run build```
