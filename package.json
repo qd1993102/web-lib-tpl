@@ -7,7 +7,7 @@
     "dev": "sh ./scripts/build.sh dev",
     "test": "sh ./scripts/build.sh test",
     "build": "sh ./scripts/build.sh build",
-    "commitmsg": "commitlint --config ./commitlint.config.js -e $GIT_PARAMS"
+    "commitmsg": "commitlint --config ./.commitlintrc.js -e $GIT_PARAMS"
   },
   "author": "",
   "license": "ISC",
