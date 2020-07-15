@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@testing-library/jest-dom": "^5.11.0",
     "@types/jest": "^26.0.4",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
