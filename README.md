@@ -1,4 +1,4 @@
-### Node project
+### Library project in browser enviroment
 
 ### prepare
 
