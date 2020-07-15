@@ -3,23 +3,26 @@
 # variables
 basedir=`dirname "${0}"`
 workdir=`dirname "${basedir}"`
-builddir="${workdir}/es"
+builddir="${workdir}/lib"
 packbin="${basedir}/readpack.js"
 repourl=`${packbin} repository.url`
 repover=`${packbin} version`
 
-# function dev() {
-  # webpack-dev-server --config ./scripts/config/webpack.dev.js --watch
-  # mocha --reporter spec --inspect-brk --debug-brk --require ts-node/register ./test/**/*.spec.ts -w
-# }
+function dev() {
+  rm -rf ./dist/
+  mkdir ./dist/
+  cp ./examples/index.html ./dist/example.html
+  webpack-dev-server --config ./scripts/config/webpack.dev.js --watch
+}
 
-# function test() {
-  # mocha --require ts-node/register ./test/**/*.spec.ts
-# }
+function test() {
+  jest
+}
 
 function build() {
   rm -rf "${builddir}"
-  tsc
+  webpack --config ./scripts/config/webpack.pub.js
+  # tsc
 }
 
 command="${1}"
